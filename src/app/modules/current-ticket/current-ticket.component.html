@@ -1,0 +1,69 @@
+<app-header
+  title="Перейти к истории"
+  src="../../../../../assets/images/icon-avatar-default.svg"
+  link="/history-ticket">
+</app-header>
+
+<section class="tickets">
+  <h2 class="ticket-section__title">Билет «Единый»</h2>
+  <div class="card-ticket">
+    <img src="../../../assets/images/card.svg" alt="card" class="card-ticket__img">
+    <div class="ticket-text">
+      <p class="ticket-section__text">Билет «Единый» позволяет совершать поездки на метро, монорельсе, автобусе, троллейбусе или трамвае. Одна поездка по билету равна одному проходу на любом виде транспорта. Билет действует на всей территории Москвы, включая Зону Б.</p>
+      <p class="ticket-section__text">Срок действия билета «Единый» на 1–2 поездки — 5 дней, включая день продажи. Срок действия билета «Единый» на 60 поездок — 45 дней со дня продажи.</p>
+    </div>
+  </div>
+  <h3 class="ticket-section__title ticket-section__title_sub">Купить билет</h3>
+  <p class="ticket-section__text ticket-section__text_mb24">Вы можете купить билет и реализовать ее на вашей карте «Тройка»</p>
+  <div class="ticket-wrapper">
+    <div class="ticket-type item-ticket">
+      <h2 class="item-ticket__title">Тип билета</h2>
+      <div class="item-ticket__list">Не выбрано</div>
+      <p class="item-ticket__text">К оплате:</p>
+      <p class="item-ticket__price">0 ₽</p>
+    </div>
+    <div class="ticket-buy item-ticket">
+      <h2 class="item-ticket__title">Карта пополнения</h2>
+      <div class="item-ticket__list item-ticket__list_mb37">Не выбрано</div>
+      <button class="item-ticket__button">Купить</button>
+    </div>
+  </div>
+  <div class="ticket-wrapper-min">
+    <div class="ticket-type item-ticket">
+      <h2 class="item-ticket__title">Тип билета</h2>
+      <div class="item-ticket__list">Не выбрано</div>
+    </div>
+    <div class="ticket-buy">
+      <h2 class="item-ticket__title item-ticket__title_ass">Карта пополнения</h2>
+      <div class="item-ticket__list">Не выбрано</div>
+    </div>
+    <div class="ticket-price-but">
+      <div class="price-but-wrap">
+        <p class="item-ticket__text">К оплате:</p>
+        <p class="item-ticket__price">0 ₽</p>
+      </div>
+      <button class="item-ticket__button">Купить</button>
+    </div>
+  </div>
+</section>
+
+<section class="tariff">
+  <h2 class="tariff__title">Тарифы</h2>
+
+  <ng-container *ngFor="let tariff of tariffs">
+    <h3 class="tariff__subtitle">{{tariff.title}}</h3>
+    <div class="tariff__text-block">
+      <p class="tariff__text">{{tariff.description}}</p>
+    </div>
+
+    <div class="trip-wrap trip" *ngFor="let offer of tariff.offers">
+      <div class="trip-item">
+        <h3 class="trip__number">{{offer.name}}</h3>
+        <p class="trip__subtext">{{offer.description}}</p>
+        <p class="trip__price">{{offer.price}}</p>
+      </div>
+    </div>
+  </ng-container>
+</section>
+
+

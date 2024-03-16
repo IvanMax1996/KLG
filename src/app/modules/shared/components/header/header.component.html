@@ -1,0 +1,32 @@
+<header class="header-section">
+  <div class="header">
+    <div class="header__title title">
+      <div class="header-logo">
+        <img src="../../../../../assets/images/logo.svg" alt="logo" class="title__logo"/>
+      </div>
+      <div class="title__text">
+        <p>Личный кабинет пассажира</p>
+      </div>
+    </div>
+    <div class="header__phone phone">
+      <p class="phone__tel">+7 495 539-54-54</p>
+      <p class="phone__provider">3210 <span>(Билайн, МТС, Мегафон, Tele2)</span></p>
+      <p class="phone__info">Контакт-центр «Московский транспорт»</p>
+    </div>
+    <div class="header__nav nav nav_hidden">
+      <img class="nav__avatar" [src]="src" alt="avatar">
+      <img class="nav__avatar-default" src="../../../../../assets/images/icon-avatar-default.svg" alt="avatar-default">
+      <p class="nav__info nav__info_hidden">Иванов Иван Иванович</p>
+      <p class="nav__tel">+7 935 435 34 43</p>
+      <span class="nav__rect"></span>
+      <p class="nav__exit">Выйти</p>
+    </div>
+    <div class="burger">
+      <span class="burger__span"></span>
+      <span class="burger__span"></span>
+      <span class="burger__span"></span>
+    </div>
+  </div>
+
+  <button class="button-buy" [routerLink]="link"><span></span>{{ title }}</button>
+</header>

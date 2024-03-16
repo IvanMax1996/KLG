@@ -1,0 +1,52 @@
+<div class="box">
+  <h2 class="box__title">История проездов</h2>
+  <div class="filter-block">
+    <h2 class="filter-block__text">Фильтр</h2>
+  </div>
+  <div class="box-wrapper" *ngFor="let card of cards">
+    <div class="box__item">
+      <div class="box__item-info">
+        <h2 class="box__item-title">{{card.title}}</h2>
+        <h2 class="box__item-price">{{card.price}}</h2>
+      </div>
+      <p class="box__item-date">{{card.date}}</p>
+      <p class="box__item-card">{{card.card}}</p>
+      <p class="box__item-number">{{card.number}}</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="button-list button">
+  <button
+    class="button__prev"
+    (click)="changePrev()">
+    <span
+      class="arrow-left"
+      [ngClass]="{
+        'red': selectedPage > 1
+      }">
+    </span>
+  </button>
+
+  <ul class="list">
+    <button
+      class="list-item"
+      *ngFor="let page of pageNumbers"
+      (click)="changePage(page)"
+      [class.active]="page == selectedPage">{{ page }}
+    </button>
+  </ul>
+
+  <button
+    class="button__next"
+    (click)="changeNext()">
+    <span
+      class="arrow-right"
+      [ngClass]="{
+        'arrow-right_grey': selectedPage === allButton
+      }">
+    </span>
+  </button>
+</div>
+

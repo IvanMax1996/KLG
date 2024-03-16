@@ -1,0 +1,342 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    max-width: 928px;
+  }
+
+  @media (max-width: 940px) {
+    max-width: 735px;
+  }
+
+  @media (max-width: 760px) {
+    max-width: 543px;
+  }
+
+  @media (max-width: 615px) {
+    max-width: 320px;
+  }
+}
+
+
+.footer {
+  &-wrap {
+    padding: 64px 0;
+    display: flex;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
+  }
+
+  &-section {
+    margin: 0 auto;
+    max-width: 1920px;
+    background: #F5F5FE;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__logo {
+    position: absolute;
+    right: -5px;
+    bottom: 65px;
+  }
+}
+
+
+.civil {
+  margin-right: 32px;
+
+  @media (max-width: 760px) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    width: 260px;
+    color: #212121;
+    font-weight: 450;
+    margin-bottom: 24px;
+    line-height: 24px;
+
+    & span {
+      display: block;
+    }
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    color: #D62828;
+    font-weight: 500;
+    margin-bottom: 24px;
+    line-height: 20px;
+  }
+
+  &-text {
+    font-size: 14px;
+    color: #212121;
+    width: 490px;
+    line-height: 20px;
+
+    @media (max-width: 1280px) {
+      width: 288px;
+    }
+
+    @media (max-width: 760px) {
+      width: 100%;
+    }
+
+    & span {
+      font-weight: 500;
+      color: #D62828;
+    }
+  }
+}
+
+
+.links {
+  &_mr70 {
+    margin-right: 70px;
+  }
+
+  &_mr80 {
+    margin-right: 80px;
+  }
+  &-wrapper-mini {
+    display: flex;
+  }
+
+  @media (max-width: 940px) {
+    &_mr32 {
+      margin-right: 32px;
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #212121;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #212121;
+    line-height: 20px;
+
+    &_mb32 {
+      margin-bottom: 32px;
+    }
+
+    &_mb72 {
+      margin-bottom: 72px;
+    }
+
+    &_mb76 {
+      margin-bottom: 76px;
+    }
+
+    &_w134 {
+      width: 134px;
+    }
+
+    &_w159 {
+      width: 159px;
+    }
+
+    &_w191 {
+      width: 191px;
+    }
+
+    &_w236 {
+      width: 236px;
+    }
+
+    @media (max-width: 1280px) {
+      &_w124 {
+        width: 124px;
+      }
+
+      &_w158 {
+        width: 158px;
+      }
+
+      &_mb52 {
+        margin-bottom: 52px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      &_mb44 {
+        margin-bottom: 44px;
+      }
+
+      &_mb24 {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 615px) {
+      &_mb64 {
+        margin-bottom: 64px;
+      }
+
+      &_w144 {
+        width: 144px;
+      }
+    }
+  }
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 940px) {
+    display: block;
+  }
+
+  &__app-store {
+    margin-bottom: 16px;
+  }
+}
+
+
+.links-2 {
+  display: none;
+
+  @media (max-width: 940px) {
+    display: block;
+  }
+
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+
+.links-3 {
+  display: none;
+
+  @media (max-width: 760px) {
+    display: block;
+  }
+
+  @media (max-width: 615px) {
+    display: none;
+  }
+}
+
+
+.links-4 {
+  display: none;
+
+  @media (max-width: 615px) {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1542px ) {
+  .footer {
+    &-section {
+      min-height: 400px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 941px) and (max-width: 1282px) {
+  .footer {
+    &-section {
+      min-height: 400px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 761px) and (max-width: 940px) {
+  .footer {
+    &-section {
+      min-height: 500px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 752px) and (max-width: 760px) {
+  .footer {
+    &-section {
+      min-height: 600px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 720px) and (max-width: 751px) {
+  .footer {
+    &-section {
+      min-height: 600px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 616px) and (max-width: 719px) {
+  .footer {
+    &-section {
+      min-height: 600px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 615px) {
+  .footer {
+    &-section {
+      min-height: 850px;
+    }
+
+    &__logo {
+      right: -5px;
+      bottom: 10px;
+    }
+  }
+}

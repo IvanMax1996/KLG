@@ -1,0 +1,56 @@
+<div class="filter-wrapper">
+  <h2 class="filter__title">Фильтр</h2>
+
+  <div class="info">
+    <h2
+      class="info__title"
+      (click)="date = !date"
+      [ngClass]="{
+        'info__title_active': date
+      }"
+    >
+      Дата проезда
+    </h2>
+    <div *ngIf="date" class="info__wrap">
+      <label class="info__label" for="date">Дата проезда</label>
+      <div class="info-wrap-input">
+        <input id="date" class="info__input" type="text" placeholder="__.__.____">
+        <img class="info__input-icon" src="../../../../../assets/images/icon-calendar.png" alt="calendar">
+      </div>
+    </div>
+
+    <h2
+      class="info__title info__title_mb16"
+      (click)="carrier = !carrier"
+      [ngClass]="{
+        'info__title_active': carrier
+      }"
+    >
+      Носитель
+    </h2>
+
+    <div *ngIf="carrier" class="card">
+      <div class="card__item item">
+        <input class="item__checkbox" type="checkbox"/>
+        <span class="item__span"></span>
+        <a href="#" class="item__link">Моя тройка</a>
+        <p class="item__text">1234 456 355</p>
+      </div>
+      <div class="card__item item item_white">
+        <input class="item__checkbox" type="checkbox"/>
+        <span class="item__span item__span-orange"></span>
+        <a href="#" class="item__link">Студенческая</a>
+        <p class="item__text item__text_mr20">1234 456 355</p>
+        <p class="item__text-CVC">08/21</p>
+      </div>
+      <div class="card__item item item_grey">
+        <input class="item__checkbox" type="checkbox"/>
+        <span class="item__span item__span-violet"></span>
+        <a href="#" class="item__link">Карта москвича</a>
+        <p class="item__text">Ожидает привязки</p>
+      </div>
+    </div>
+
+    <button class="info__button">Сохранить</button>
+  </div>
+</div>

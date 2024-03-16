@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+
+  &__filter, &__hostory {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
