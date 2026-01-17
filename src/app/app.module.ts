@@ -9,7 +9,6 @@ import { HistoryPassagesComponent } from './modules/history/components/history-p
 import { FooterComponent } from './modules/shared/components/footer/footer.component';
 import { CurrentTicketComponent } from './modules/current-ticket/current-ticket.component';
 import { HttpClientModule} from "@angular/common/http";
-import { TicketsComponent } from './modules/tickets/tickets.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { TicketsComponent } from './modules/tickets/tickets.component';
     HistoryPassagesComponent,
     FooterComponent,
     CurrentTicketComponent,
-    TicketsComponent
   ],
   imports: [
     BrowserModule,

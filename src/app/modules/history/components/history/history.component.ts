@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./history.component.scss']
 })
 
-export class HistoryComponent {
-
-}
+export class HistoryComponent {}
